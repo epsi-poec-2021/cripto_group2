@@ -24,7 +24,7 @@ def decrypt(message, key_good_length):
 		shift = ord(key_good_length[i]) % ord('A') 
 		decrypted_index_letter =  ord(message[i])  - shift 
 		if decrypted_index_letter < ord('A'):
-			#decrypted_index_letter can't be inferior to encrypted_index_letter - 25 (shift in beetween 0 at 25) 
+			#decrypted_index_letter can't be inferior to - 25 (shift in beetween 0 at 25) 
 			#Thus we don't need to add ord(Z) more than one time
 			decrypted_index_letter = decrypted_index_letter - ord('A') + ord('Z') + 1 
 		decrypted_character = chr(decrypted_index_letter) 
